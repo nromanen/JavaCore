@@ -19,10 +19,11 @@ public class Phone{
         double cina1 = c1 * t1;
         double cina2 = c2 * t2;
         int cina3 = c3 * t3;
+        double razom = cina1 + cina2 + cina3;
 
         System.out.println("Ціна розмови за перший дзвінок складає " + cina1);
         System.out.println("Ціна розмови за другий дзвінок складає " + cina2);
         System.out.println("Ціна розмови за третій дзвінок складає " + cina3);
-        System.out.println("Ціна розмови за всі дзвінки складає " + cina1 + cina2 + cina3);
+        System.out.println("Ціна розмови за всі дзвінки складає " + razom);
     }
 }
