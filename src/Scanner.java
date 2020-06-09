@@ -1,7 +1,7 @@
-import java.io.InputStream;
+/*import java.io.InputStream;
 //import java.util.Scanner;
 public class Scanner {
-    public Scanner(InputStream in) {
+    public Scanner(InputStream.in) {
     }
     public static void main(String[] args) {
         java.util.Scanner month = new java.util.Scanner(System.in);
@@ -17,7 +17,7 @@ public class Scanner {
     }
 }
 
-/*
+
 
 public class Scaner{
    public static void main(String[] arg) {
