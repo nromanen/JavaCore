@@ -6,7 +6,7 @@ How much computer will count for each call separately and all talk together?
 Input all source data from console, make calculations and output to the screen.
 */
 public class Phone{
-    public static void main(){
+    public static void main(String... arg){
 
     int c1 = 1;
     int c2 = 2;
@@ -20,6 +20,9 @@ public class Phone{
         double cina2 = c2 * t2;
         int cina3 = c3 * t3;
 
-System.out.println(cina1 + cina2 + cina3);
+        System.out.println("Ціна розмови за перший дзвінок складає " + cina1);
+        System.out.println("Ціна розмови за другий дзвінок складає " + cina2);
+        System.out.println("Ціна розмови за третій дзвінок складає " + cina3);
+        System.out.println("Ціна розмови за всі дзвінки складає " + cina1 + cina2 + cina3);
     }
 }
