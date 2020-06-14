@@ -7,22 +7,50 @@ read number of HTTP Error (400, 401,402, ...) and write the name of this error
  */
 
 
+import static java.lang.System.*;
 public class Operators {
     public static void main(String[] arg) {
-
-        int a = 5;
-        int b = 0;
+        int q = (int) (Math.random() * 10);
+        out.println(q);
+        int a = q;
+        int b = 5;
         int c = -5;
-
         int max = 5;
         int min = -5;
 
-//int diapazon = b|a|c;
         if (a >= min && a <= max && b >= min && b <= max && c >= min && c <= max) {
-            System.out.println("Дані числа лежать в діапазоні від -5 до 5");
+            out.println("Дані числа лежать в діапазоні від -5 до 5");
         } else {
-            System.out.println("Дані числа НЕ лежать в діапазоні від -5 до 5");
+            out.println("Дані числа НЕ лежать в діапазоні від -5 до 5");
         }
+
+//        int z = a < b ? (a + b) : (a - b);
+//        out.println(z);
+
+        if (a > c && a > b) {
+            out.println(a + " найбільше!");
+        } else if (b > a && b > c) {
+            out.println(b + " найбільше!");
+        } else if (c > a && c > b) {
+            out.println(c + " найбільше!");
+        } else {
+            out.println("Найбільшого числа немає");
+        }
+
+
+        if (a < c && a < b) {
+            out.println(a + " найменше число!");
+        } else if (b < a && b < c) {
+            out.println(b + " найменше число!");
+        } else if (c < a && c < b) {
+            out.println(c + " найменше число!");
+        } else {
+            out.println("Найменшого числа немає");
+        }
+
+
+
+
     }
 }
 
