@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 лип. 2020, 12:34:06
+    Author     : dmytr
+*/
+#links{    
+  display:flex;
+  justify-content:space-around;  
+}
+#links a{    
+  border:10px solid rgb(55,110,130);
+  border-radius:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;  
+  margin:10px;
+  margin-top:40px;
+}
+#links a img{    
+  order:0;
+  width:250px;
+  height:200px
+}
+#links a:hover img{
+  width:276px;
+  height:220px;  
+}
+#links a:hover{  
+  font-size:20px;  
+  margin-bottom:-20px;
+  margin-left: -3px;
+  margin-right:-3px;
+}
+a div{   
+  order:1;   
+}
+#header{    
+  text-align: center;
+  font-size: 48px;
+  color:white;
+  font-family: 'Arial Black';
+  background-color: rgb(55,110,130);
+  padding:50px;
+  border:10px solid rgb(55,110,130);
+  display:flex;
+  justify-content:center;
+  margin:0px;  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#header img{   
+  width:55px;
+  height:55px;
+}
+#socialNetworks{    
+  display:flex;
+  justify-content:space-around;   
+}
+#socialNetworks a{    
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  color:white;  
+}
+#socialNetworks a img{    
+  order:0;
+  width:100px;
+  height:100px;
+}
+footer{    
+  background-color:rgb(46,71,71);
+  border-radius:20px;
+  margin-top:50px;
+}
+footer h1{
+  color:white;
+  text-align: center;
+}
+footer h2{
+  color:white;
+  text-align:center;
+  font-size:15px;
+}
+
+

@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 лип. 2020, 21:31:04
+    Author     : dmytr
+*/
+#commodityHeader{    
+  text-align: center;
+  font-size: 48px;
+  color:white;
+  font-family: 'Arial Black';
+  background-color: rgb(55,110,130);
+  padding:50px;
+  border:10px solid rgb(55,110,130);  
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+form{
+  border:5px solid rgb(55,110,130);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 15px;
+  margin-top: -15px
+}
+#commodityList{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+#commodityList #commodity img{ 
+  order:0;
+  width:300px;
+  height:300px;
+}
+#commodityRow{    
+  display:flex;
+  justify-content:space-around;
+}
+#commodity{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border:1px solid gray;
+  margin:15px;    
+}
+#commodityList #commodity p{
+  text-align: center;
+  margin:0px;
+}
+
+
+
