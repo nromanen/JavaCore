@@ -85,6 +85,7 @@
               <input type="submit" value="Apply" id="apply">
           </form>
         </div>
+        <input type="button" id="basket" value="Basket">
         <div id="filterBtnContainer">
             <input type="button" id="filterBtn" value="Hide filter">            
         </div>
@@ -95,6 +96,20 @@
         <div id="commodityList">
           ${laptop.filter()}
         </div>
+        <div id="popup_window">
+            <input type="button" id="close" value="close">            
+            <div id="addedItems">Basket is empty</div>            
+            <form method="POST">
+                <label>To make an order live us your contct information, please:</label><br>
+                <label>Your name:</label>
+                <input type="text" name="name" id="name"><br>
+                <label>E-mail:</label>
+                <input type="text" name="email" id="email"><br>
+                <label>Phone:</label>
+                <input type="text" name="name" id="name"><br>
+            </form>
+        </div>
+        <div id ="overlay"></div>
         <footer>            
           <h1>Contacts:</h1>
           <div id="socialNetworks">

@@ -21,7 +21,7 @@ and open the template in the editor.
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-form{
+#form form{
   border:5px solid rgb(55,110,130);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
