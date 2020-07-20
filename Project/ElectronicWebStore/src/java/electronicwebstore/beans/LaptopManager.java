@@ -42,7 +42,7 @@ public class LaptopManager extends ScreenCommodityManager{
     String result="";    
     for(int i=0;i<comms.size();i++){
       if((i==0) || (i%3==0)){result+="<div id=\"commodityRow\">";}
-      result+="<div id=\"commodity\">"+addImage((Laptop)comms.get(i))+
+      result+="<div class=\"comm"+comms.get(i).getId()+"\" id=\"commodity\">"+addImage((Laptop)comms.get(i))+
               ((Laptop)comms.get(i)).toHTML()+"</div>";
       if(((i+1)%3==0 && i>0) || (i==(comms.size()-1))){result+="</div>";}
     }

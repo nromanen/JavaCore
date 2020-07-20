@@ -60,7 +60,7 @@ public class Accesorie extends Commodity{
               +"<p id=\"brandModel\">"+getBrand()+" "+getModel()+"</p>"
               +"<p id=\"shortDesc\">Short description::"+shortDescription+"</p>"              
               +"<p id=\"price\">Price:"+getPrice()+"</p>" 
-              + "<input type=\"button\" id=\"buy\" value=\"Buy\">";
+              + "<input type=\"button\" id=\"comm"+getId()+"\" class=\"buy\" value=\"Buy\">";
     }
     public static Accesorie input()throws StringFieldException,ResolutionException,NumericValueException,BooleanException{
       try{

@@ -61,7 +61,7 @@ public class Laptop extends ScreenCommodity {
               +"</p>"+"<p id=\"operatingMemory\">Operating memory:"+getOperMem()+"</p>"+
               "<p id=\"internalMemory\">Internal memory:"+getIntMem()+"</p>"
               +"<p id=\"price\">Price:"+getPrice()+"</p>" 
-              + "<input type=\"button\" id=\"buy\" value=\"Buy\">";
+              + "<input type=\"button\" id=\"comm"+getId()+"\" class=\"buy\" value=\"Buy\">";
     }
     public static Laptop input()throws SimCountException,StringFieldException,ResolutionException,NumericValueException,BooleanException{
       try{

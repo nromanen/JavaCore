@@ -84,7 +84,7 @@ public class MobileDevice extends Laptop {
               "<p id=\"sim\">Internal memory:"+getSimCount()+"</p>"+
               "<p id=\"gpsOutput\">Internal memory:"+isGps()+"</p>"
               +"<p id=\"price\">Price:"+getPrice()+"</p>" 
-              + "<input type=\"button\" id=\"buy\" value=\"Buy\">";
+              + "<input type=\"button\" id=\"comm"+getId()+"\" class=\"buy\" value=\"Buy\">";
     }
     
     public static MobileDevice input()throws SimCountException,StringFieldException,ResolutionException,NumericValueException,BooleanException{

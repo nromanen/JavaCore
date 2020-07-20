@@ -15,6 +15,7 @@ import java.io.Serializable;
  */
 public abstract class Commodity implements Serializable {
     private int id;
+    public static int count;
     private String brand;
     private String model;
     private double price;
@@ -22,10 +23,11 @@ public abstract class Commodity implements Serializable {
     public Commodity() {
     }
 
-    public Commodity(String brand,  String model, double price) {
+    public Commodity(String brand,  String model, double price) {        
         this.brand = brand;
         this.model=model;
         this.price = price;
+        id=++count;
     }
 
     public String getBrand() {        

@@ -53,7 +53,7 @@ public class Television extends ScreenCommodity {
               "<p id=\"smart_tv\">SmartTv:"+isSmartTv()+"</p>"+
               "<p id=\"3d\">3D:"+isThreeD()+"</p>"
               +"<p id=\"price\">Price:"+getPrice()+"</p>" 
-              + "<input type=\"button\" id=\"buy\" value=\"Buy\">";
+              + "<input type=\"button\" id=\"comm"+getId()+"\" class=\"buy\" value=\"Buy\">";
     }
     
     public static Television input()throws StringFieldException,ResolutionException,NumericValueException,BooleanException{
