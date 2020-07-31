@@ -22,11 +22,18 @@ and open the template in the editor.
   border-bottom-right-radius: 20px;
 }
 #form form{
+  background-color:white; 
   border:5px solid rgb(55,110,130);
+  border-bottom:10px solid rgb(55,110,130);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding-top: 15px;
   margin-top: -15px
+}
+#form{
+    background-color:rgb(55,110,130);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #commodityList{
   display:flex;
@@ -47,12 +54,42 @@ and open the template in the editor.
   flex-direction:column;
   justify-content:space-between;
   border:1px solid gray;
-  margin:15px;    
+  margin:15px;
+  align-items:center;
 }
 #commodityList #commodity p{
   text-align: center;
   margin:0px;
 }
 
-
-
+#otherPagesLinks{
+    display:flex;
+    justify-content:space-around;    
+}
+#otherPagesLinks a{
+    color:white;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+}
+#otherPagesLinks a:hover{
+   background-color: rgb(50,100,110); 
+}
+#commodity .buy{   
+   width:200px;
+   height:50px;
+   margin-bottom:15px;     
+}
+#filterBtnContainer{
+  background-color: rgb(55,110,130);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height:50px;
+  margin-bottom: 50px;
+  /*margin-top:-12px;*/  
+}
+#filterBtn{
+    float:left;    
+}

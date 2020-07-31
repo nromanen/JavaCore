@@ -15,17 +15,26 @@
         <link rel="stylesheet" href="css\mobile.css">        
     </head>
     <body>
-        <jsp:useBean id="mobile" scope="session" class="electronicwebstore.beans.MobileManager"/>
-        <jsp:setProperty name="mobile" property="*"/> 
-        <h1 id="header">Mobile phones</h1>
+       <div id="headerContainer">
+          <div id="titleAndButtonContainer">
+            <h1 id="title">Mobile phones</h1>
+            <input type="button" id="basket" value="Basket">
+          </div>          
+          <div id="otherPagesLinks">
+              <a href="TvServlet">TVs</a>
+              <a href="MobileServlet">Mobile phones</a>
+              <a href="LaptopServlet">Laptops</a>
+              <a href="AccServlet">Accesories</a>
+          </div>
+        </div>        
         <div id="form">
-          <form action="mobile.jsp" method="POST">
+          <form action="${pageContext.request.contextPath}\MobileServlet" method="POST">
             <div id="priceInput">
               <label>Price from:</label>
               <label><span id="minPriceValue"></span></label><br>                
-              <input type="range" name="minPrice" min="1" max="100000" value="${mobile.minPrice}" class="slider" id="minPrice"><br>
+              <input type="range" name="minPrice" min="0" max="100000" value="${mobile.minPrice}" class="slider" id="minPrice"><br>
               <label>To:<label id="maxPriceValue"></label></label><br>
-              <input type="range" name="maxPrice" min="1" max="100000" value="${mobile.maxPrice}" class="slider" id="maxPrice"><br>
+              <input type="range" name="maxPrice" min="0" max="100000" value="${mobile.maxPrice}" class="slider" id="maxPrice"><br>
             </div>
             <div id="screenAndBrandInput">
               <label>Screensize:</label><br>
@@ -106,29 +115,18 @@
             </div>
             <input type="submit" id="apply" value="Apply">
           </form>
-        </div>
-        <input type="button" id="basket" value="Basket">
-        <div id="filterBtnContainer">
+          <div id="filterBtnContainer">
             <input type="button" id="filterBtn" value="Hide filter">            
-        </div>
-        <%if(request.getParameterValues("operMem")!=null){
-            mobile.setOperMem(request.getParameterValues("operMem"));
-          }
-          if(request.getParameterValues("simCount")!=null){
-            mobile.setSimCount(request.getParameterValues("simCount"));
-          }
-          if(request.getParameterValues("gps")!=null){
-            mobile.setGps(request.getParameterValues("gps"));
-          }
-        %>
+          </div>         
+        </div>      
         <div id="commodityList">
           ${mobile.filter()}
         </div>
         <div id="popup_window">
-            <input type="button" id="close" value="close">            
+            <input type="button"  id="close" value="&times;"><br>            
             <div id="addedItems">Basket is empty</div>            
             <form method="POST">
-                <label>To make an order live us your contct information, please:</label><br>
+                <label>To make an order live us your contact information, please:</label><br>
                 <label>Your name:</label>
                 <input type="text" name="name" id="name"><br>
                 <label>E-mail:</label>

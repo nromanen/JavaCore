@@ -12,12 +12,17 @@ and open the template in the editor.
         <link rel="stylesheet" href="css\index.css">
     </head>
     <body>
-        <h1 id="header"><img src="images/favicon.png" alt="Electronic Webstore">Electronic Webstore</h1><br>
+        <div id="headerContainer">
+        <div id="titleAndButtonContainer">
+            <h1 id="title"><img src="images/favicon.png" alt="Electronic Webstore">Electronic Webstore</h1><br>
+            <input type="button" id="basket" value="Basket">
+        </div>
+        </div>
         <div id="links">
-          <a href="tv.jsp"><img src="images/tv-sony.jpg" alt="TVs"><div>TVs</div></a>
-          <a href="mobile.jsp"><img src="images/mobileDevice-smartphone.png" alt="Mobile phoness"><div>Mobile phones</div></a>
-          <a href="laptops.jsp"><img src="images/laptop-laptops.jpeg" alt="Laptops"><div>Laptops</div></a>
-          <a href="accesories.jsp"><img src="images/acc-accesories.jpg" alt="Accesories"><div>Accesories</div></a>
+          <a href="TvServlet"><img src="images/tv-sony.jpg" alt="TVs"><div>TVs</div></a>
+          <a href="MobileServlet"><img src="images/mobileDevice-smartphone.png" alt="Mobile phones"><div>Mobile phones</div></a>
+          <a href="LaptopServlet"><img src="images/laptop-laptops.jpeg" alt="Laptops"><div>Laptops</div></a>
+          <a href="AccServlet"><img src="images/acc-accesories.jpg" alt="Accesories"><div>Accesories</div></a>
         </div>
         <footer>            
           <h1>Contacts:</h1>
@@ -29,5 +34,20 @@ and open the template in the editor.
           <h2>Phone:+380977777777</h2>
           <h2>E-mail:electronocwebstore@gmail.com</h2>
         </footer>
+        <div id="popup_window">
+            <input type="button" id="close" value="&times;"><br>           
+            <div id="addedItems"></div>            
+            <form method="POST">
+                <label>To make an order live us your contact information, please:</label><br>
+                <label>Your name:</label>
+                <input type="text" name="name" id="name"><br>
+                <label>E-mail:</label>
+                <input type="text" name="email" id="email"><br>
+                <label>Phone:</label>
+                <input type="text" name="name" id="name"><br>
+            </form>
+        </div>
+        <div id ="overlay"></div>
+        <script src="javascript/index.js"></script>
     </body>
 </html>

@@ -10,8 +10,7 @@ and open the template in the editor.
 #form form{
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:8fr 1fr;
-  margin-bottom: 50px;
+  grid-template-rows:8fr 1fr;  
 }
 #priceInput{
   grid-column:1/2;
@@ -51,4 +50,7 @@ and open the template in the editor.
   grid-column:1/2;
   grid-rows:2/3;
   align-self: flex-start;
+}
+#commodityRow{
+    margin-bottom:10px;
 }

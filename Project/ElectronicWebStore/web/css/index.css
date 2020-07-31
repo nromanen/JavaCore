@@ -7,6 +7,10 @@ and open the template in the editor.
     Created on : 14 лип. 2020, 12:34:06
     Author     : dmytr
 */
+body{
+    border:none;
+    margin:0px;
+}
 #links{    
   display:flex;
   justify-content:space-around;  
@@ -39,21 +43,27 @@ and open the template in the editor.
 a div{   
   order:1;   
 }
-#header{    
-  text-align: center;
-  font-size: 48px;
-  color:white;
-  font-family: 'Arial Black';
-  background-color: rgb(55,110,130);
-  padding:50px;
-  border:10px solid rgb(55,110,130);
-  display:flex;
-  justify-content:center;
-  margin:0px;  
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+#headerContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:white;
+    font-family: 'Arial Black';
+    background-color: rgb(55,110,130);
+    padding:30px;
+    border:10px solid rgb(55,110,130);    
+    margin:0px;  
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-#header img{   
+#headerContainer #title{
+    text-align: center;
+    font-size: 48px;
+}
+#titleAndButtonContainer{    
+}
+
+#title img{   
   width:55px;
   height:55px;
 }
@@ -119,13 +129,17 @@ footer h2{
   opacity: 1;
   pointer-events: all;
 }
-#basketItem{
+#basketItem{    
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 #basketItem img{
     width:50px;
     height:50px;
+}
+#basket{
+    float:right;
+    margin-bottom:10px;
 }
 #close {
   cursor: pointer;
@@ -136,5 +150,33 @@ footer h2{
   font-weight: bold;
   float:right;
 }
+.remove{
+   font-size:10px;    
+   width:75px;
+   height:30px;
+   margin-right:10px;
+}
+#totalSum{
+    text-align:right;
+}
+
+#apply,#basket,#filterBtn,.buy,.remove{
+   color:white;
+   font-family: 'Arial Black';
+   background-color: rgb(55,110,130);
+   border-radius:10px;
+   outline:none;
+   box-shadow:10px 5px #999;
+   cursor: pointer;   
+}
+#apply:hover,#basket:hover,#filterBtn:hover,.buy:hover,.remove:hover{
+    background-color: rgb(50,100,110);
+}
+#apply:active,#basket:active,#filterBtn:active,.buy:active,.remove:active{
+  background-color: rgb(50,100,110);
+  box-shadow: 5px 0px #660;
+  transform: translateY(4px);
+}
+
 
 

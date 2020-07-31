@@ -15,11 +15,20 @@
         <link rel="stylesheet" href="css\laptops.css">        
     </head>
     <body>
-        <jsp:useBean id="laptop" scope="session" class="electronicwebstore.beans.LaptopManager"/>
-        <jsp:setProperty name="laptop" property="*"/> 
-        <h1 id="header">Laptops</h1>
+        <div id="headerContainer">
+          <div id="titleAndButtonContainer">
+            <h1 id="title">Laptops</h1>
+            <input type="button" id="basket" value="Basket">
+          </div>           
+          <div id="otherPagesLinks">
+              <a href="TvServlet">TVs</a>
+              <a href="MobileServlet">Mobile phones</a>
+              <a href="LaptopServlet">Laptops</a>
+              <a href="AccServlet">Accesories</a>
+          </div>
+        </div>         
         <div id="form">
-          <form action="laptops.jsp" method="POST">
+          <form action="${pageContext.request.contextPath}\LaptopServlet" method="POST">
               <div id="priceInput">
                 <label>Price from:</label>
                 <span id="minPriceValue"></span><br>                
@@ -84,23 +93,18 @@
               </div>
               <input type="submit" value="Apply" id="apply">
           </form>
-        </div>
-        <input type="button" id="basket" value="Basket">
-        <div id="filterBtnContainer">
+          <div id="filterBtnContainer">
             <input type="button" id="filterBtn" value="Hide filter">            
-        </div>
-        <%if(request.getParameterValues("operMem")!=null){
-            laptop.setOperMem(request.getParameterValues("operMem"));
-          }          
-        %>
+          </div>           
+        </div>      
         <div id="commodityList">
           ${laptop.filter()}
         </div>
         <div id="popup_window">
-            <input type="button" id="close" value="close">            
+            <input type="button"  id="close" value="&times;"><br>            
             <div id="addedItems">Basket is empty</div>            
             <form method="POST">
-                <label>To make an order live us your contct information, please:</label><br>
+                <label>To make an order live us your contact information, please:</label><br>
                 <label>Your name:</label>
                 <input type="text" name="name" id="name"><br>
                 <label>E-mail:</label>
