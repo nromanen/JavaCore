@@ -79,10 +79,10 @@ public class MobileDevice extends Laptop {
               +"<p id=\"screen\">ScreenSize:"+getScreenSize()+"</p>"+"<p id=\"res\">"+getRes()
               +"</p>"+"<p id=\"operatingMemory\">Operating memory:"+getOperMem()+"</p>"+
               "<p id=\"internalMemory\">Internal memory:"+getIntMem()+"</p>"+
-              "<p id=\"externalMemory\">Internal memory:"+getExtMem()+"</p>"+
-              "<p id=\"cameraOutput\">Internal memory:"+getCamera()+"</p>"+
-              "<p id=\"sim\">Internal memory:"+getSimCount()+"</p>"+
-              "<p id=\"gpsOutput\">Internal memory:"+isGps()+"</p>"
+              "<p id=\"externalMemory\">External memory:"+getExtMem()+"</p>"+
+              "<p id=\"cameraOutput\">Camera:"+getCamera()+"</p>"+
+              "<p id=\"sim\">Sim cards:"+getSimCount()+"</p>"+
+              "<p id=\"gpsOutput\">Gps:"+isGps()+"</p>"
               +"<p id=\"price\">Price:"+getPrice()+"</p>" 
               + "<input type=\"button\" id=\"comm"+getId()+"\" class=\"buy\" value=\"Buy\">";
     }

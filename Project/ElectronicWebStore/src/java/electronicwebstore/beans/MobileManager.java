@@ -65,6 +65,7 @@ public class MobileManager extends LaptopManager{
     for(int i=0;i<gps.length;i++){
       gps[i]="off";      
     }
+    simCount=null;
   }
   
   public void filterByExtMem(){
@@ -102,7 +103,7 @@ public class MobileManager extends LaptopManager{
       return "<img src=\"images\\mobileDevice-"+mobile.getBrand().toLowerCase()+"-"
             +mobile.getModel().toLowerCase()+".jpg\" alt=\""+mobile.getBrand()
               +" "+mobile.getModel()+"\">";
-    if(mobile.getBrand().equals("Huawei") || mobile.getBrand().equals("Meize") 
+    if(mobile.getBrand().equals("Huawei") || mobile.getBrand().equals("Meizu") 
             || mobile.getBrand().equals("Xiaomi")){
       return "<img src=\"images\\mobileDevice-"+mobile.getBrand().toLowerCase()+
               ".jpg\" alt=\""+mobile.getBrand()+" "+mobile.getModel()+"\">";
