@@ -11,8 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Accesories</title>
         <link rel="stylesheet" href="css\index.css">
-        <link rel="stylesheet" href="css\commodity.css">
-        <link rel="stylesheet" href="css\accesories.css">        
+        <link rel="stylesheet" href="css\accesories.css">
+        <link rel="stylesheet" href="css\commodity.css">        
     </head>
     <body>
         <div id="headerContainer">
@@ -86,6 +86,7 @@
                 <input type="text" name="email" id="email"><br>
                 <label>Phone:</label>
                 <input type="text" name="name" id="name"><br>
+                <input type="sublmit" id=send value="send">
             </form>
         </div>
         <div id ="overlay"></div>

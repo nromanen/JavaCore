@@ -11,8 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Laptops</title>
         <link rel="stylesheet" href="css\index.css">
-        <link rel="stylesheet" href="css\commodity.css">
-        <link rel="stylesheet" href="css\laptops.css">        
+        <link rel="stylesheet" href="css\laptops.css">
+        <link rel="stylesheet" href="css\commodity.css">        
     </head>
     <body>
         <div id="headerContainer">
@@ -103,14 +103,15 @@
         <div id="popup_window">
             <input type="button"  id="close" value="&times;"><br>            
             <div id="addedItems">Basket is empty</div>            
-            <form method="POST">
+            <form action="https://formspree.io/danilovdmitro76@gmail.com" method="POST">
                 <label>To make an order live us your contact information, please:</label><br>
                 <label>Your name:</label>
                 <input type="text" name="name" id="name"><br>
                 <label>E-mail:</label>
                 <input type="text" name="email" id="email"><br>
                 <label>Phone:</label>
-                <input type="text" name="name" id="name"><br>
+                <input type="text" name="phone" id="name"><br>
+                <input type="submit" id=send value="send">
             </form>
         </div>
         <div id ="overlay"></div>

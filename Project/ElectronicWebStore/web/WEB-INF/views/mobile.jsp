@@ -10,9 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mobile phones</title>
-        <link rel="stylesheet" href="css\index.css">
+        <link rel="stylesheet" href="css\index.css">        
+        <link rel="stylesheet" href="css\mobile.css"> 
         <link rel="stylesheet" href="css\commodity.css">
-        <link rel="stylesheet" href="css\mobile.css">        
     </head>
     <body>
        <div id="headerContainer">
@@ -59,15 +59,15 @@
             </div>
             <div id="operMemInput">
               <label>Operating memory:</label><br>
-              <input type="checkbox" name="operMem" value="4">
+              <input type="checkbox" name="operMem" value="2">
               <label>2</label><br>
-              <input type="checkbox" name="operMem" value="8">
+              <input type="checkbox" name="operMem" value="4">
               <label>4</label><br>
-              <input type="checkbox" name="operMem" value="12">
+              <input type="checkbox" name="operMem" value="6">
               <label>6</label><br>
-              <input type="checkbox" name="operMem" value="16">
+              <input type="checkbox" name="operMem" value="8">
               <label>8</label><br>
-              <input type="checkbox" name="operMem" value="32">
+              <input type="checkbox" name="operMem" value="12">
               <label>12</label><br>
             </div>
             <div id="intExtMemCameraInput">
@@ -125,14 +125,15 @@
         <div id="popup_window">
             <input type="button"  id="close" value="&times;"><br>            
             <div id="addedItems">Basket is empty</div>            
-            <form method="POST">
+            <form action="https://formspree.io/danilovdmitro76@gmail.com" method="POST">
                 <label>To make an order live us your contact information, please:</label><br>
                 <label>Your name:</label>
                 <input type="text" name="name" id="name"><br>
                 <label>E-mail:</label>
                 <input type="text" name="email" id="email"><br>
                 <label>Phone:</label>
-                <input type="text" name="name" id="name"><br>
+                <input type="text" name="phone" id="name"><br>
+                <input type="submit" id=send value="send">
             </form>
         </div>
         <div id ="overlay"></div>

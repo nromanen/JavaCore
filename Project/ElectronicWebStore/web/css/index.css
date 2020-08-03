@@ -9,13 +9,14 @@ and open the template in the editor.
 */
 body{
     border:none;
-    margin:0px;
+    margin:0px;   
 }
 #links{    
   display:flex;
   justify-content:space-around;  
 }
-#links a{    
+#links a{
+  width:250px;     
   border:10px solid rgb(55,110,130);
   border-radius:10px;
   display:flex;
@@ -34,7 +35,8 @@ body{
   width:276px;
   height:220px;  
 }
-#links a:hover{  
+#links a:hover{ 
+  width:276px;  
   font-size:20px;  
   margin-bottom:-20px;
   margin-left: -3px;
@@ -76,12 +78,13 @@ a div{
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
-  color:white;  
+  color:white;    
 }
 #socialNetworks a img{    
   order:0;
   width:100px;
   height:100px;
+  border-radius: 20px; 
 }
 footer{    
   background-color:rgb(46,71,71);
@@ -159,8 +162,11 @@ footer h2{
 #totalSum{
     text-align:right;
 }
-
-#apply,#basket,#filterBtn,.buy,.remove{
+#send{
+    float:left;
+    margin-bottom:10px;
+}
+#apply,#basket,#filterBtn,#send,.buy,.remove{
    color:white;
    font-family: 'Arial Black';
    background-color: rgb(55,110,130);
@@ -169,13 +175,34 @@ footer h2{
    box-shadow:10px 5px #999;
    cursor: pointer;   
 }
-#apply:hover,#basket:hover,#filterBtn:hover,.buy:hover,.remove:hover{
+#apply:hover,#basket:hover,#send:hover,#filterBtn:hover,.buy:hover,.remove:hover{
     background-color: rgb(50,100,110);
 }
-#apply:active,#basket:active,#filterBtn:active,.buy:active,.remove:active{
+#apply:active,#basket:active,#filterBtn:active,#send:hover,.buy:active,.remove:active{
   background-color: rgb(50,100,110);
   box-shadow: 5px 0px #660;
   transform: translateY(4px);
+}
+@media(max-width:980px){
+  #links{    
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+  }  
+
+  #socialNetworks{    
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;   
+  }
+  #socialNetworks a{    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    color:white;  
+  } 
 }
 
 

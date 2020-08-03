@@ -34,7 +34,11 @@ function hide(){
 };
 function show(){    
         document.getElementById('filterBtn').value='Hide filter';
-        document.querySelector('#form form').style.display='grid';
+        if(document.querySelector('body').offsetWidth>720){
+          document.querySelector('#form form').style.display='grid';
+        } else{
+          document.querySelector('#form form').style.display='flex';          
+        }
         document.getElementById('filterBtnContainer').style.marginTop='0px';
         document.getElementById('filterBtn').removeEventListener('click',show);
         document.getElementById('filterBtn').addEventListener('click',hide);        
